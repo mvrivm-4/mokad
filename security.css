@@ -1,0 +1,584 @@
+.parent {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.334), rgba(0, 0, 0, 0.356)), url("pexels-scottwebb-430208.jpg");
+    height: 100vh;
+    background-size: cover;
+    width: 100%;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+}
+
+.oo {
+    margin-left: 27%
+}
+
+* {
+    overflow-x: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hi {
+    margin-top: 40px;
+    color: black;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.img1 {
+    width: 50px;
+    height: 50px;
+}
+
+.btnd:hover {
+    opacity: 0.9;
+}
+
+.btnd {
+    margin-left: 20px;
+    width: 200px;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.bhh {
+    font-size: 30px;
+}
+
+.gana {
+    width: 600px;
+    margin-left: 20px;
+    font-style: italic;
+    margin-top: 200px;
+    overflow: hidden;
+}
+
+.dark {
+    color: aliceblue;
+    text-align: center;
+}
+
+.head {
+    color: aliceblue;
+}
+
+.pra {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+
+/* box blur  عشان اعمل  */
+
+
+/* .glass {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.138), rgba(152, 132, 132, 0.249));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(152, 132, 132, 0.249);
+    width: 600px;
+    height: 400px;
+    box-shadow: 0 8px 0 rgba(0, 0, 0, 0.138);
+    margin-left: 30%;
+    margin-top: 10%;
+}
+ */
+
+h1 {
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+.slide {
+    animation: slids 0.75s ease-in-out both;
+}
+
+@keyframes slids {
+    from {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.new {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: cornflowerblue;
+    margin-left: 20px;
+    background-image: linear-gradient(rgb(30, 20, 20), rgb(255, 17, 0));
+    color: transparent;
+    background-clip: text;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.main-se {
+    margin-bottom: 20px;
+}
+
+.news {
+    text-align: center;
+    color: rgb(20, 11, 11);
+    margin-top: 30px;
+}
+
+.gif,
+.gifs {
+    width: 400px;
+    height: 200px;
+}
+
+.tag {
+    font-size: 40px;
+}
+
+
+/* Footer Styles */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    /* Full width */
+    position: relative;
+    bottom: 0;
+}
+
+
+/* Footer content */
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Centers the content */
+}
+
+
+/* Footer links */
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* General styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: rgba(59, 59, 60, 0.662);
+    color: #fefafa;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #161515;
+}
+
+.footer-section ul li a:hover {
+    color: #f0ecec;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
+
+/* Responsive Styling */
+
+@media screen and (max-width: 768px) {
+    .footer-links {
+        text-align: center;
+        margin-top: 15px;
+    }
+    .footer-links li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+.fw {
+    font-size: 22px;
+}
+
+.sec {
+    width: 350px;
+    text-align: center;
+}
+
+.slides {
+    animation: slid 1s ease-in-out both;
+}
+
+@keyframes slid {
+    from {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.gana {
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+
+/* تعريف الأنيميشن */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slider {
+    animation: slidee 1.25s ease-in-out both;
+}
+
+@keyframes slidee {
+    from {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.secs {
+    animation: slidee 1.25s ease-in-out both;
+}
+
+@keyframes slidee {
+    from {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/* تثبيت الزر في الزاوية السفلية اليمنى */
+
+#button {
+    position: fixed;
+    /* يجعل الزر ثابتًا بالنسبة للشاشة */
+    bottom: 20px;
+    /* يبعد الزر عن أسفل الشاشة بمقدار 20px */
+    right: 20px;
+    /* يبعد الزر عن يمين الشاشة بمقدار 20px */
+    padding: 10px 20px;
+    /* إضافة حشوة داخل الزر */
+    background-color: #007BFF;
+    /* لون خلفية */
+    color: white;
+    /* لون النص */
+    border: none;
+    /* إزالة الحدود */
+    border-radius: 5px;
+    /* زوايا مستديرة */
+    cursor: pointer;
+    opacity: 0.75;
+    /* تغيير شكل المؤشر عند التحويم */
+}
+
+#button:hover {
+    background-color: #0056b3;
+    /* تغيير اللون عند التحويم */
+}
+
+@media(max-width:700px) {
+    .parent {
+        background-image: url("pexels-scottwebb-430208.jpg");
+        height: 100vh;
+        background-size: cover;
+        width: 100%;
+        overflow-x: hidden;
+        background-repeat: no-repeat;
+    }
+    .gif {
+        width: 260px;
+    }
+    .sec-hes,
+    .sec-he {
+        margin-left: 0;
+    }
+    .gifs {
+        width: 300px;
+        margin-left: 10px;
+    }
+    .new,
+    .news {
+        font-size: 40px;
+    }
+    .gif {
+        margin-left: 20px;
+    }
+    .tag {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .sec {
+        width: 300px;
+    }
+    .bhh {
+        font-size: 15px;
+    }
+    .card {
+        margin-bottom: 10px;
+        margin-left: 15px;
+    }
+    .gana {
+        width: auto;
+        margin-top: 130px;
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    .pra {
+        color: aliceblue;
+        font-size: 20px;
+    }
+    .btnd:hover {
+        opacity: 1;
+    }
+    .btnd {
+        margin-left: 20px;
+        width: auto;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .hi {
+        font-size: 30px;
+        font-weight: bold;
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+    .news {
+        font-size: 20px;
+    }
+    .card {
+        margin-left: 40px;
+    }
+    #keys {
+        font-size: 35px;
+    }
+}
+
+.cz {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#btn {
+    width: 200px;
+    padding: 3px;
+}
+
+.sec-he {
+    margin-top: 20px;
+}
+
+ul {
+    text-align: center;
+    color: #161515;
+}
+
+li:hover {
+    color: #fefafa;
+}
+
+.hide {
+    display: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.abou {
+    width: 550px;
+    height: 350px;
+    margin-left: 80px;
+}
+
+.abous {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.ber {
+    width: 500px;
+}
+
+.he-section {
+    width: 300px;
+}
+
+.sec-section {
+    width: 370px;
+}
+
+.sec-he {
+    margin-left: 70px;
+    width: 350px;
+}
+
+.sec-hes {
+    width: 370px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+
+/* .elav {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    width: 500px;
+    text-align: center;
+    color: aliceblue;
+} */
+
+.play {
+    opacity: 0.8;
+}
+
+.box {
+    width: 80vw;
+    margin: 2rem auto;
+    border: 2px solid goldenrod;
+    height: 150px;
+}
+
+.news {
+    margin-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-left: 20px;
+    background-image: linear-gradient(rgb(0, 123, 255), blue);
+    color: transparent;
+    background-clip: text;
+}
+
+hr {
+    display: none;
+    border-color: aqua;
+    position: fixed;
+    left: 0;
+    width: 100vw;
+}
+
+hr.top {
+    top: 150px;
+}
+
+hr.bottom {
+    bottom: 200px;
+}

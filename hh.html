@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow Background</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: end;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            transition: background-image 0.5s ease-in-out;
+        }
+        
+        .slideshow-container {
+            position: relative;
+            max-width: 600px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            display: none;
+        }
+        
+        .slides {
+            display: none;
+        }
+        
+        .slides img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        
+        .next {
+            right: 0;
+            border-radius: 50%;
+        }
+        
+        .prev {
+            left: 0;
+        }
+        
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .image-selector {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .image-selector img {
+            width: 200px;
+            height: 115px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        .image-selector img:hover,
+        .image-selector img.selected {
+            border-color: #333;
+        }
+    </style>
+</head>
+
+<body id="background">
+
+    <!-- Slideshow Container -->
+    <div class="slideshow-container">
+        <!-- Slide 1 -->
+        <div class="slides">
+            <img src="web.jpg" alt="Slide 1">
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slides">
+            <img src="Web2.jpg" alt="Slide 2">
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slides">
+            <img src="web3.jpg" alt="Slide 3">
+        </div>
+
+        <!-- Navigation Buttons -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <!-- Image Selector -->
+    <div class="image-selector">
+        <img src="web.jpg" onclick="selectSlide(1)" alt="Thumbnail 1">
+        <img src="Web2.jpg" onclick="selectSlide(2)" alt="Thumbnail 2">
+        <img src="web3.jpg" onclick="selectSlide(3)" alt="Thumbnail 3">
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/Previous controls
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Select specific slide from thumbnails
+        function selectSlide(n) {
+            showSlides(slideIndex = n);
+            updateBackground(n);
+        }
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("slides");
+            let thumbnails = document.querySelectorAll(".image-selector img");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+
+            updateBackground(slideIndex);
+        }
+
+        function updateBackground(index) {
+            let images = [
+                'web.jpg',
+                'web2.jpg',
+                'web3.jpg'
+            ];
+            document.getElementById("background").style.backgroundImage = `url('${images[index - 1]}')`;
+        }
+    </script>
+
+</body>
+
+</html>
